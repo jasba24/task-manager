@@ -1,5 +1,5 @@
 <template>
-	<Header :logoTask="logoTask" />
+	<Header :logoTask="logoTask" :links="links" />
 </template>
 
 <script>
@@ -17,7 +17,10 @@ export default {
 			logoTask,
 			links: [
 				{
-					name: "Tasks",
+					name: "tasks",
+				},
+				{
+					name: "about"
 				},
 			],
 		}

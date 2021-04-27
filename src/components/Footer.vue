@@ -1,5 +1,10 @@
 <template>
-	<p>Task Manager make using <img :src="logo" /> by <a href="https://twitter.com/jasba24">@jasba24</a></p>
+	<footer>
+		<p>
+			Task Manager make using <img :src="logo" /> by
+			<a href="https://twitter.com/jasba24">@jasba24</a>
+		</p>
+	</footer>
 </template>
 
 <script>
