@@ -1,7 +1,9 @@
 <template>
 	<header>
-		<img :src="logoTask" alt="" />
-		<h1>Task Manager</h1>
+		<div>
+			<img :src="logoTask" alt="" />
+			<h1>Task Manager</h1>
+		</div>
 		<nav>
 			<ul>
 				<li v-for="l in links">
@@ -24,11 +26,5 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-@import "../stylus/vars.styl"
-
-header
-	background-color: $primary-color
-	display flex
-img
-	width 70px
+@import "../stylus/header.styl"
 </style>

@@ -18,12 +18,5 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-p
-	font-size 50px
-	color black
-img
-	width 50px
-a
-	text-decoration none
-	color black
+@import "../stylus/footer.styl"
 </style>
