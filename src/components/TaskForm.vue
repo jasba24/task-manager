@@ -1,10 +1,24 @@
 <template>
 	<form>
-		<label>New Task</label>
-		<input type="text" v-model="name" placeholder="Task Name" />
-		<input type="number" v-model="name" placeholder="Worked Hours" />
-		<button>Guardar</button>
-		<button>Cancelar</button>
+		<label class="form__title">New Task</label>
+		<div class="input__container">
+			<input
+				class="form__input"
+				type="text"
+				v-model="name"
+				placeholder="Task Name"
+			/>
+			<input
+				class="form__input"
+				type="number"
+				v-model="time"
+				placeholder="Worked Hours"
+			/>
+		</div>
+		<div class="btn__container">
+			<button class="form__btn">Guardar</button>
+			<button class="form__btn">Cancelar</button>
+		</div>
 	</form>
 </template>
 
@@ -14,4 +28,6 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus"></style>
+<style scoped lang="stylus">
+@import "../stylus/input.styl"
+</style>

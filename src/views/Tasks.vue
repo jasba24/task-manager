@@ -13,7 +13,7 @@ export default {
 		TaskStack,
 	},
 
-	data(){
+	data() {
 		return {
 			links: [
 				{
@@ -22,7 +22,8 @@ export default {
 				{
 					name: "about",
 				},
-			]
-		}}
+			],
+		}
+	},
 }
 </script>

@@ -33,4 +33,6 @@ html
   -moz-osx-font-smoothing grayscale
 body
 	margin 0
+	height 100vh
+	background-color gradient($primary-color, $secondary-color)
 </style>

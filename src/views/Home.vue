@@ -1,6 +1,8 @@
 <template>
 	<Header :links="links" />
-	<task-form></task-form>
+	<section class="form__container">
+		<task-form></task-form>
+	</section>
 </template>
 
 <script>
@@ -28,3 +30,11 @@ export default {
 	},
 }
 </script>
+
+<style lang="stylus" scoped>
+.form__container
+	display flex
+	justify-content space-evenly
+	align-items center
+	width 100%
+</style>
