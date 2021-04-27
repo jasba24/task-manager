@@ -1,13 +1,13 @@
 <template>
 	<header>
 		<div>
-			<img :src="logoTask" alt="" />
+			<router-link to="/"><img src="../assets/logoTask.png" alt=""/></router-link>
 			<h1>Task Manager</h1>
 		</div>
 		<nav>
 			<ul>
 				<li v-for="l in links">
-					<a :href="l.name">{{ l.name }}</a>
+					<router-link :to="l.name">{{ l.name }}</router-link>
 				</li>
 			</ul>
 		</nav>

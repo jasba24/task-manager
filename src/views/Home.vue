@@ -1,31 +1,30 @@
 <template>
-	<Header :logoTask="logoTask" :links="links" />
+	<Header :links="links" />
+	<task-form></task-form>
 </template>
 
 <script>
-import logoTask from "@/assets/logoTask.png"
 import Header from "@/components/Header"
+import TaskForm from "@/components/TaskForm"
 
 export default {
 	name: "Home",
 	components: {
 		Header,
+		TaskForm,
 	},
 
 	data() {
 		return {
-			logoTask,
 			links: [
 				{
 					name: "tasks",
 				},
 				{
-					name: "about"
+					name: "about",
 				},
 			],
 		}
 	},
 }
 </script>
-
-<style></style>
