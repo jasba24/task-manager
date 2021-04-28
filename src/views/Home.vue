@@ -21,9 +21,11 @@ export default {
 			links: [
 				{
 					name: "tasks",
+					href: "/tasks"
 				},
 				{
 					name: "about",
+					href: "/about"
 				},
 			],
 		}
@@ -37,4 +39,5 @@ export default {
 	justify-content space-evenly
 	align-items center
 	width 100%
+	height 70vh
 </style>

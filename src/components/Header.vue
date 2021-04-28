@@ -7,7 +7,7 @@
 		<nav>
 			<ul>
 				<li v-for="l in links">
-					<router-link :to="l.name">{{ l.name }}</router-link>
+					<router-link :to="l.href">{{ l.name }}</router-link>
 				</li>
 			</ul>
 		</nav>

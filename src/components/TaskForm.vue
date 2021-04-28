@@ -9,6 +9,12 @@
 				placeholder="Task Name"
 			/>
 			<input
+				type="text"
+				class="form__input"
+				v-model="text"
+				placeholder="Task Description"
+			/>
+			<input
 				class="form__input"
 				type="number"
 				v-model="time"

@@ -1,6 +1,6 @@
 <template>
 	<Header :links="links" />
-	<task-stack />
+	<task-stack :tasks="tasks" />
 </template>
 
 <script>
@@ -18,9 +18,37 @@ export default {
 			links: [
 				{
 					name: "home",
+					href: "/",
 				},
 				{
 					name: "about",
+					href: "/about",
+				},
+			],
+			tasks: [
+				{
+					text:
+						"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ratione incidunt ipsum eius voluptatibus perferendis explicabo itaque iste nemo amet repellat temporibus, totam doloremque mollitia maxime cum debitis aut autem.",
+					title: "1 Tasks",
+					time: 1,
+				},
+				{
+					text:
+						"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ratione incidunt ipsum eius voluptatibus perferendis explicabo itaque iste nemo amet repellat temporibus, totam doloremque mollitia maxime cum debitis aut autem.",
+					title: "1 Tasks",
+					time: 1,
+				},
+				{
+					text:
+						"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ratione incidunt ipsum eius voluptatibus perferendis explicabo itaque iste nemo amet repellat temporibus, totam doloremque mollitia maxime cum debitis aut autem.",
+					title: "1 Tasks",
+					time: 1,
+				},
+								{
+					text:
+						"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ratione incidunt ipsum eius voluptatibus perferendis explicabo itaque iste nemo amet repellat temporibus, totam doloremque mollitia maxime cum debitis aut autem.",
+					title: "1 Tasks",
+					time: 1,
 				},
 			],
 		}
