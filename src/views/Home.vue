@@ -1,7 +1,7 @@
 <template>
 	<Header :links="links" />
 	<section class="form__container">
-		<task-form></task-form>
+		<task-form @taskData="getTaskData"></task-form>
 	</section>
 </template>
 
@@ -18,17 +18,26 @@ export default {
 
 	data() {
 		return {
+			name: "",
 			links: [
 				{
 					name: "tasks",
-					href: "/tasks"
+					href: "/tasks",
 				},
 				{
 					name: "about",
-					href: "/about"
+					href: "/about",
 				},
 			],
+
+			data: {},
 		}
+	},
+
+	methods: {
+		getTaskData(data) {
+			this.data = data
+		},
 	},
 }
 </script>
@@ -39,5 +48,5 @@ export default {
 	justify-content space-evenly
 	align-items center
 	width 100%
-	height 70vh
+	height 69.5vh
 </style>

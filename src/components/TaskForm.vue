@@ -2,27 +2,13 @@
 	<form>
 		<label class="form__title">New Task</label>
 		<div class="input__container">
-			<input
-				class="form__input"
-				type="text"
-				v-model="name"
-				placeholder="Task Name"
-			/>
-			<input
-				type="text"
-				class="form__input"
-				v-model="text"
-				placeholder="Task Description"
-			/>
-			<input
-				class="form__input"
-				type="number"
-				v-model="time"
-				placeholder="Worked Hours"
-			/>
+			<input class="form__input" type="text" placeholder="Task Name" />
+			<input class="form__input" type="number" placeholder="Worked Hours" />
 		</div>
 		<div class="btn__container">
-			<button class="form__btn">Guardar</button>
+			<button @click.prevent="getData" class="form__btn">
+				Guardar
+			</button>
 			<button class="form__btn">Cancelar</button>
 		</div>
 	</form>
@@ -31,6 +17,23 @@
 <script>
 export default {
 	name: "TaskForm",
+
+	data() {
+		return {
+			data: {},
+		}
+	},
+
+	methods: {
+		getData() {
+			const inputText = document.querySelector("input[type=text]")
+			const inputTime = document.querySelector("input[type=number]")
+			this.data.name = inputText.value
+			this.data.time = inputTime.value
+
+			this.$emit("taskData", this.data)
+		},
+	},
 }
 </script>
 
